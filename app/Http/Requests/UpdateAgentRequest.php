@@ -28,7 +28,7 @@ class UpdateAgentRequest extends FormRequest
                 'username' => 'required',
                 'emailAgent' =>'required',
                 'roleAgent' =>'required',
-                'passwordAgent' =>'required',
+                'passwordAgent' =>'required|min:6',
             ];
         
     }
